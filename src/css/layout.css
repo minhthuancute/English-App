@@ -1,0 +1,30 @@
+.colums-table {
+  text-transform: capitalize;
+}
+
+.colums-table:hover {
+  background: magenta !important;
+}
+
+.colums-definition {
+  text-align: left !important;
+}
+
+.colums:hover {
+  background: rgba(255, 0, 255, 0.2) !important;
+  cursor: pointer;
+}
+
+.ant-table-cell:hover {
+  background: rgba(255, 0, 255, 0.2) !important;
+  cursor: pointer;
+}
+
+.ant-alert-message {
+  text-transform: capitalize;
+}
+
+.text-translate {
+  text-transform: capitalize;
+}
+/*# sourceMappingURL=layout.css.map */

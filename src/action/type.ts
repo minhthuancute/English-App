@@ -1,0 +1,7 @@
+
+export const VALIDATION_WORD_SUCCESS: string = 'VALIDATION_WORD_SUCCESS';
+export const VALIDATION_WORD_ERR: string = 'VALIDATION_WORD_ERR';
+export const CLEAR_VALIDATION_WORD: string = 'CLEAR_VALIDATION_WORD';
+export const HANDLE_SEARCH: string = 'HANDLE_SEARCH';
+export const ADD_NEW_WORD_SUCCESS: string = 'ADD_NEW_WORD_SUCCESS';
+export const TRANSLATE_SUCCESS: string = 'TRANSLATE_SUCCESS';

@@ -1,0 +1,33 @@
+.colums-table {
+   text-transform: capitalize;
+
+   &:hover {
+      background: magenta !important;
+   }
+}
+
+.colums-definition {
+   text-align: left !important;
+}
+
+.colums {
+   &:hover {
+      background: rgba($color: magenta, $alpha: .2) !important;
+      cursor: pointer;
+   }
+}
+
+.ant-table-cell {
+   &:hover {
+      background: rgba($color: magenta, $alpha: .2) !important;
+      cursor: pointer;
+   }
+}
+
+.ant-alert-message {
+   text-transform: capitalize;
+}
+
+.text-translate {
+   text-transform: capitalize;
+}
