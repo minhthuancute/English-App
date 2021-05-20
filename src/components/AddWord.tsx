@@ -38,7 +38,6 @@ const AddWord: React.FC = () => {
    const [isAdd, setIsAdd] = useState<boolean>(false);
    const [isDelete, setIsDelete] = useState<boolean>(false); // prop passing to Table Component
 
-
    const handleLocalStorage = (): void => {
       let local = localStorage.getItem('words');
       if (local) {
@@ -73,7 +72,6 @@ const AddWord: React.FC = () => {
       }
    }
 
-
    useEffect(() => { // Handle effect when add new word
       handleLocalStorage();
 
@@ -91,11 +89,14 @@ const AddWord: React.FC = () => {
    useEffect(() => {
       handleLocalStorage();
       setIsDelete(false);
+
       return () => { }
    }, [isDelete])
 
    const handleChange = (e: ChangeEvent<HTMLInputElement>): void => {
-      setInputWord(e.target.value);
+      let value: string = e.target.value;
+      value = value.replace(/\s+/g, "");
+      setInputWord(value);
    }
 
    const handleSubmit = (): void => {
@@ -116,7 +117,7 @@ const AddWord: React.FC = () => {
             <div className="site-layout-background" style={{ minHeight: 360 }}>
                <Form onFinish={handleSubmit} form={form}>
                   <Form.Item
-                     label='Thêm từ mới'
+                     label='Thêm (01) từ mới'
                      name='inputWord'
                      rules={[{ required: true, message: 'Please input new word!' }]}
                   >

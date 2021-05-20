@@ -2,7 +2,6 @@
 import { Dispatch } from 'redux';
 import { TRANSLATE_SUCCESS } from '../action/type';
 
-
 // import { translateViki } from './funcTranslate';
 import { translateMicrosoft } from './funcTranslate';
 // import { translateGoogle } from './funcTranslate';

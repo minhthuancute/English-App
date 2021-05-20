@@ -34,7 +34,6 @@ const LayoutComponent: React.FC<PropTable> = ({ breadcrumb, selectedKey, childre
    const [inputSearch, setInputSearch] = useState<string>('');
    const [lengthWords, setLengthWords] = useState<number>(0);
 
-
    useEffect(() => {
       const local = localStorage.getItem('words');
       if (local) {

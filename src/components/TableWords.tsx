@@ -168,7 +168,6 @@ const TableWords: React.FC<Prop> = ({ setIsDelete, dataSource }) => {
             rowSelection={{
                type: optionsTable['rowSelection']['type'],
             }}
-
          />
       </div>
    )
